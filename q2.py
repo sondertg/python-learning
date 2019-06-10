@@ -14,4 +14,4 @@ def fact(x):
 
 
 x = int(input("write a positive number to calculate its factorial"))
-print("factorial of x is", fact(x))
+print("factorial of", x, "is", fact(x))
