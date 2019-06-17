@@ -5,19 +5,17 @@
 # Also please include simple test function to test the class methods.
 
 
-class Employee:
-    def __init__(self, name, surname):
-        self.name = name
-        self.surname = surname
-        self.fullname = name + surname
+class Employee(object):
+    def __init__(self):
+        self.name = ''
 
-    def getfullname(self):
-        self.fullname = input()
+    def getname(self):
+        self.name = input()
 
-    def printfullname(self):
-        print(self.name + ' ' + self.surname.upper())
+    def printname(self):
+        print(self.name.upper())
 
 
-emp1 = Employee('tugay', 'gul')
-
-emp1.printfullname()
+emp1 = Employee()
+emp1.getname()
+emp1.printname()
