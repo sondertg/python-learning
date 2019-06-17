@@ -15,4 +15,9 @@ class Employee:
         self.fullname = input()
 
     def printfullname(self):
-        print(self.name + self.surname.upper())
+        print(self.name + ' ' + self.surname.upper())
+
+
+emp1 = Employee('tugay', 'gul')
+
+emp1.printfullname()
